@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="../content/styles/ChessBoardStyle.css">
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>Chess Game</title>
+    <meta id="view" name="viewport" content="width=device-width, initial-scale=0.1">
+</head>
+
+<body>
+
+    <h1 id="gameTitle">Chess: </h1>
+    <p class="textSize"></p>
+    <p><strong>Thinks how to walk:</strong><img id="walkqueue" class="pictureSize" src="" alt="WaklQueue"></p>
+    <div>
+        <img id="playerOne">
+        <img id="playerTwo">
+        <table id="board">
+
+        </table>
+    </div>
+
+    <div id="buttonContainer">
+        <button id="undo" class="moveButton"><strong>Back</strong></button>
+        <button id="restart"><strong>Restart</strong></button>
+        <button id="continue"><strong>Continue</strong></button>
+        <button id="next" class="moveButton"><strong>Next</strong></button>
+    </div>
+
+    <button id="boardRotate">Rotate Board</button>
+
+    <script src="../content/scripts/Methods.js"></script>
+    <script src="../content/scripts/Model/BoardChess/ChessBoard.js"></script>
+    <script src="../content/scripts/View/ViewOnBoard.js"></script>
+    <script src="../content/scripts/View/ViewMethods.js"></script>
+    <script src="../content/scripts/Model/PiecesChess/ChessPiece.js"></script>
+    <script src="../content/scripts/Model/PiecesChess/PiecePawn.js"></script>
+    <script src="../content/scripts/Model/PiecesChess/PieceKnight.js"></script>
+    <script src="../content/scripts/Model/PiecesChess/PieceRook.js"></script>
+    <script src="../content/scripts/Model/PiecesChess/PieceKing.js"></script>
+    <script src="../content/scripts/Model/PiecesChess/PieceBishop.js"></script>
+    <script src="../content/scripts/Model/PiecesChess/PieceQueen.js"></script>
+    <script src="../content/scripts/Constants.js"></script>
+    <script src="../content/scripts/GetJsonFromServerUse.js"></script>
+    <script src="../content/scripts/ChessBoardGameScript.js"></script>
+    <script src="../content/scripts/GameController.js"></script>
+</body>
+
+</html>
